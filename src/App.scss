@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap');
+@import './Variables.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: $medium-dark-color;
+  color: $light-color;
+}
+
+#root {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+footer {
+  padding: 1.5rem 0;
+  background-color: #202026;
+  border-top: 1px solid #188c911a;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+a {
+  display: inline-block;
+
+  &:hover {
+    color: $dark-color;
+    text-decoration: underline;
+  }
+}
+
+.separator {
+  background-color: $primary-color;
+  height: 0.3rem;
+  width: 3rem;
+  margin: 1rem 0 2rem;
+  border-radius: $border-radius;
+}
+
+// Tags
+.tags {
+  span {
+    display: inline-block;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.1rem 0.5rem;
+    color: $primary-color;
+    font-size: 0.8rem;
+  }
+}
+
+// Buttons
+.button {
+  padding: 0.5rem 2rem;
+  background-color: $primary-color;
+  font-weight: 500;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: $light-color;
+  
+  &:hover {
+    color:$light-color;
+  }
+}
+
+// Headings
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .subtitle {
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+
+  .separator {
+    margin: 1rem auto 1rem;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  border-bottom: 1px solid $border-color;
+  width: fit-content;
+  padding: .2rem 2rem;
+  font-size: .9rem;
+
+  a {
+    color: $primary-color;
+    transition: $main-transition;
+  }
+}
+
+.quote {
+  display: block;
+  background-color: $border-color;
+  padding: .2rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: $border-radius;
+  padding: 1.5rem 2rem;
+  font-style: italic;
+}
+
+// Bootstrap overrides
+.nav-pills {
+  justify-content: center !important;
+  margin-bottom: 2rem !important;
+
+  .nav-link {
+    color: $light-color !important;
+    border-radius: $border-radius !important;
+    font-weight: 700 !important;
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: $primary-color !important;
+}

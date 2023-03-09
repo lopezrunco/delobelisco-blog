@@ -1,0 +1,15 @@
+@import '../../Variables.scss';
+
+.footer {
+    background-image: url('../../../public/assets/noise-bg.png');
+    padding: 2rem 0;
+    border-top: 1px solid $border-color;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        .links {
+            text-align: right;
+        }
+    }
+}

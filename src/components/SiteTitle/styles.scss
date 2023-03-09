@@ -1,0 +1,18 @@
+@import '../../Variables.scss';
+
+.site-title {
+    padding-bottom: 3rem;
+    text-align: center;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 9rem;
+    }
+
+    p {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
