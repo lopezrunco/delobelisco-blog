@@ -4,6 +4,7 @@ import { HIDE_LOADER, SHOW_LOADER } from './utils/general-action-types'
 import { NotFound } from './pages/NotFound'
 import { Blog } from './pages/Blog'
 import { Article } from './pages/Article'
+import { Contact } from './pages/Contact'
 import { ScrollOnNav } from './components/ScrollOnNav'
 import { Loader } from './components/Loader'
 import './App.scss'
@@ -40,6 +41,7 @@ function App() {
       <div className="App">
         <ScrollOnNav />
         <Routes>
+          <Route path="/contact" element={<Contact />} />
           <Route path="/:id" element={<Article />} />
           <Route path='/' element={<Blog />} />
           <Route path='*' element={<NotFound />} />

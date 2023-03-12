@@ -51,7 +51,7 @@ export const Blog = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
                     >
-                        <SiteTitle />
+                        <SiteTitle subtitle='Just one more blog where a random human from Camino al Obelisco - Uruguay, writes about his experiences on this godless piece of rock called Earth.' />
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

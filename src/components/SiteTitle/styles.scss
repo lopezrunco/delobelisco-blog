@@ -1,8 +1,10 @@
 @import '../../Variables.scss';
 
 .site-title {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3rem;
 
     h1 {
         text-transform: uppercase;

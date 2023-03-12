@@ -1,0 +1,17 @@
+@import '../../Variables.scss';
+
+.contact {
+    li {
+        margin: 1rem;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f054";
+            color: $primary-color;
+            display: inline-block;
+            padding-right: .5rem;
+            vertical-align: middle;
+            font-weight: 900;
+        }
+    }
+}
